@@ -1,0 +1,47 @@
+Attributes of table tag
+.border(it specifies the width of the border around the table)
+.celpadding(specifies the space between the cell wall and the cell content)
+.cellspacing(specifies the space between the cell )
+.align(values can be left,center or right)
+.width(specifies the width of the table)
+.bgcolor(specifies a background color of the table)
+-color name ("pink")
+-hex code of color name ("#ffA000")
+rgb number("rgb(255,0,0)")
+======================================================
+Attributes of <th> and <td>
+.align=left,right,center,justify
+.bgcolor=color name,rgb(),hex code
+.colspan=number
+.rowspan=number
+.height=pixel or percentage
+.valign=top,middle,bottom
+.width=pixel or percentage
+=======================================================
+Form tag
+.html form are used to pass data to a server.
+. a  form can  contain input elements lile text fields,checkboxes ,radio-buttons,submit buttons and more.
+.a form can also contain select lists,textarea,fieldset,legend
+and label elements.
+.The most important form element is the input element.
+.Action
+-The required action attribute specifies where to send the form
+data when  a form is submitted.
+.Method 
+-Specifies how to send form data
+-The form data can be sent as url variable(with method ="get") or as HTTP post(with method="post").
+=========================================================================================
+Tags within the form
+.<input>
+.<button>
+.<option>
+.<select>
+.<textarea>
+============================================================================================
+Iframe
+.An iframe is used to display a web page within a web page
+.tag is
+-<iframe>
+.Attribute.src
+-<iframe src="url"></iframe>
+======================================================================
