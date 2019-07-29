@@ -1,0 +1,199 @@
+Introduction
+=============
+.javascript is a high level ,untyped and interpreted programming language.
+.Despite some naming syntactic and standard library similarities,javascript and java are
+otherwise unrelated.
+=========================================================================
+Why javascript?
+===============
+.javascript is used in web pages to add functionality ,validate forms,
+communicating with server and read write html elements.
+.javascript is a client side scripting language(because javascript program run on our device not in the server).
+=========================================================================
+Javascript Interpretor
+====================
+.As the browser goes through the javascript ,it passes it to a special program called interpretor,which 
+converts the javascript to the machine code your computer understands. 
+.Browsers come equipped with Javascript Interpretors.
+=========================================================================
+Where to write code?
+===================
+.In the same HTML code.
+<script type="text/javascript">
+...
+...
+</script>
+.In external file.
+<script type="text/javascript" src="javascriptfile.js">//javascript.js is our external javascript file
+</script>
+==========================================================================
+.javascript is default scripting language in html.
+.Sript can be placed anywhere in html document (body or head)
+==========================================================================
+alert in pop up program.
+======================================
+.javascript is a programming language.
+.javascript statements are separated by semicolons.
+.javascript statements are composed of:values,Operators,expression,keyword and comments.
+======================================
+.34.25 number.
+.304 number
+."Hello" string
+======================================
+.variable are used to store data values
+.The var keyword is used to declae variables 
+var x=5;
+======================================
+NaN-not a number(error message'if operation is done with undefined variable)
+======================================
+variable is dinamic type they adjust themselves according to data.
+======================================
+Operat0rs
+.operators are used to manipulate data and gives a data as result
+
+3+4
+2*4 etc
+======================================
+An expression is a combination of values, variable and operators which computers to a value.
+x=3+4*5;
+y="x="+x;
+======================================
+.var is a keyword
+.As of now there are 63 keywords in js.
+======================================
+variables-C:\Users\hp\Pictures\Capture.PNG
+=====================================
+.Code after double slashes// or between /* and */ is treated as a comment.
+.comments are ignored, and will not be executed.
+======================================
+.In javascript ,the first character must be a letter, an underscore(_), or dolleer sign ($).
+.Subsequent charaters may be letters,digits, underscores, or doller.
+======================================
+.js variable are containers for storing constants.The keyword var is used to declare variable
+
+. var x=4;
+.var y=3.5;
+.var z="hello";
+.var a=3+x;
+======================================
+.names can contain letters,digits,underscores,and doller sign.
+.names  must begin with a letter,$ or_
+.names are case sentive.
+=====================================
+Concatenation operator 
+.var x="Hello"+" "+"Students";
+.var y="2"+4+5;
+======================================
+Assignment operator
+.= is an assignment operator
+.== is equal to operator
+======================================
+.== face only
+.=== type and face both
+======================================
+.javascripts offers almost the same control statements as we have in C language
+.if else,if,?:
+.switch
+.while,do-while,for,for in
+============================================
+.conditional operator
+Exp1?exp2:exp3;
+==============================
+FUNCTION
+.Function is a block of code designed to perform certain action
+.function functionName(VariableName)
+
+{//code here
+}
+==================================
+Function execution
+.function is executed when 
+--function is invoked from another js function
+--function is attached with some event and event occur
+========================================
+Why function
+.You can reuse code
+.Script inside function is not executed until function is invoked( onclick is event attribute,, used with button)
+==========================================
+.javascript has three kinds of popup boxes
+-Alert box
+_Confirm box
+_Prompt box
+====================================
+ALERT BOX
+.When an alert box pops up, the user will have to click"0k" to proceed.
+.alert ("message to show on alert box");
+=======================================
+CONFIRM BOX
+.When a confirm box pops up , the user will have to click 
+either "Ok" or "Cancel to proced.
+.if the user clicks"OK",the box return true.if the user clicks"cancel', the box
+returns false.
+.confirm("some message");
+===================================================
+PROMPT BOX
+.A prompt box is often used if you want the user to input a value before entering
+a page
+.When a prompt box pops up, the user will have to click either "ok" or 
+"cancle" to proceed after entering an input value.
+.if the user clicks "ok" the box returns the input value. if the user clicks" cancle"
+the box returns numm.
+.prompt"message","default value");
+====================================================
+Events
+.Events are actions that can be detected by javascript
+--When a user clicks the mouse
+--when a web page has loaded
+-- when an image  has been loaded
+--when the mouse moves over an elenents 
+-- when an input field is changed 
+-- when an Html form is submitted 
+--when a user strokes a key
+===============================================
+Event Handling
+.Sometimes we want to execute a javascript  when a event occurs, such as when a user clicks a button
+.Events are normally used in combination with function , and the function will not be  executed before  the event occurs.
+===============================================================
+Event  attributes
+.onload:A page or image is finished loading
+.onunload:The user exits the  page
+.onblur:An elements loses focus 
+.onchange:The content of a field changes
+.onclick:Mouse clicks an object
+.ondblclick:Mouse double-clicks an object
+.onfocus:An elements get focus
+.onselect:Text is selected
+.onKeydown:A Keyword key is pressed
+.onKeypress:A Keyboard key is pressed or held down
+.onkeyup:A keyword key is released.
+.onmousedown:A mouse button is pressed
+.onmousemove:The mouse is moved
+.onmouseout:The mouse is moved off an  elements
+.onmouseover:The mouse is moved over an elements
+.onmouseup:A mouse button is released
+=====================================================
+=================================================
+Document Object Methods
+.getElementById()
+.getElementsByTagName()
+.getElementsByName()
+.getElementsByClassName()
+=========================================
+.obj.style.cssproperty="value";
+=======================================
+What is form?
+.form is a html element to take information from the user ,using various input elements.
+<form action ="some url" method ="get">
+<input type="text" name="user"/>
+<input type="password" name="pwd"/>
+<input type="number" name="age"/>
+<input type ="submit"/>
+</form>
+===========================================================
+<!DOCTYPE html> -it mentions that document type is html version number 5
+===============================================================
+In javascript css properties are written in canel case notation.
+ex-
+font-size in css
+fontSize in javascript
+===============================================================
