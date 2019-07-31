@@ -1,0 +1,233 @@
+What is CSS
+.Css is Cascading style sheet
+.Css defines how to display HTML elements.
+======================================
+Who developed css?
+.The world wide web consortium(w3C)
+created css
+========================================
+Current version 
+.currently we are using CSS3
+=====================================================================
+Where to write CSS?
+.We can write CSS in a seperate file and link it to our html file or embed css in html file itself
+.External style sheet
+.internal style sheet
+.inline style
+=====================================================================================
+CSS syntax
+.ElementSelector
+ {
+   propertyName:PropertyValue;
+   PropertyName:PropertyValue;
+   PropertyName:PropertyValue;
+   .....
+ }
+========================================================================================
+Element Selector 
+.ElementSelector is used to specify an Html
+ element or group of html elements on which
+ properties are applied
+.There are three ways to specify an element selector
+-Tag Name 
+-Id Value
+-ClassValue
+=========================================================================================
+PropertyName :PropertyValue
+.PropertyName is the name of the css property name followed by colon(: and then property value
+.we can write one or more property declaration in block.
+=========================================================================================
+External Style sheet
+.External style sheet is a separate file of css
+.file must be saved with .css extension
+.file contains no tag and only contains css codes
+.file can be used to apply on several html files
+.External style sheet is usefull when properties need to be applied on more than one web page of the site
+============================================================================================
+Internal style sheet
+.internal style sheet means when cs  is include in the same html file
+.<style> tag must be used to write css in html file
+.<style> tag should be in <head> tag
+.Type attribute of style tag specify the type of MIME type(text/css)
+.internal style sheet is usefull when page specific properties need to be applied
+.Preferences is given to internal style sheet over external style sheet.
+=============================================================================
+Inline Style
+.Style attribute can be used with tag
+representing html elements
+.the value of style attribute is any css property.
+.Example
+<h1 style="color:green;text-decoration:underline;">This is a heading</h1>
+.Each property name-value pair is terminated with  a semicolon.
+.Inline style has more preference given than internal or external style
+.inline style is useful when element specific property needs to be applied.
+=============================================================================
+Change the color of text
+.The color property is used to set the color of the text.
+.Example:
+-body{color:blue;}
+-h1{color:#00ff00;}
+-h2{color:rgb(255,0,0);}
+==============================================================================
+Text alignment
+.The text-align property is used to set the horizontal alignment
+of a text.
+.Text can be centered, or aligned to the left or right or justified.
+.h1{text-align:center;}
+===================================================================================
+Decorating text
+.The text-decoration property is used to set or remove decoration from text.
+a{text-decoration:none;}
+h1{text-decoration:overline;}
+h2{text-decoration:line-through;}
+h3{text-decoration:underline;}
+==============================================================================
+Text transformation
+.The text-transform property is used to specify uppercase and lowercase letters in a text.
+p.uppercase{text-transform:uppercase;}
+p.lowercase{text-transform:lowercase;}
+p.capitalize{text-transform:capitalize;}
+===============================================================
+Styling font
+.The font-style property is mostly used to specify italic text.
+.This property has following values:
+-normal-The text is shown normally
+-italic-The text is shown in italics
+=========================================================
+change the size of font
+.The font-size property sets the size of the text.
+p{font-size:24px;}
+===========================================================
+Giving weightage to text
+.The font-weight property sets the boldness of the text
+p{font-weight:bold;}
+===========================================================
+Changing the font
+.the font family of a text is set with the font -family property .
+.Example
+-p{font-family:"Georgia";}
+===================================================
+Shadow effect to the text
+.The text-shadow property applies shadow to text.
+.text-shadow:h-shadow v-shadow blur color;
+p
+{
+  text-shadow:20px 20px5px gray;
+}
+==========================================================
+Space between the lines
+.it specifies space between the lines of a paragraph text.
+.line-height:0.8;
+========================================================
+Space between the characters
+.it specifies the space between  the letters of a text.
+.letter-spacing:1.5;
+===================================================
+Space between the words
+.It specifies space between the words
+.word-spacing:12px;
+===================================================
+Border-style
+.Every html element that consumes space in the web page is arectangular region
+.This rectangular region can be bordered using css properties
+.Border-style property allows you to choose one from various style of the border.
+Possible values of border -style:
+-solid
+-dotted
+-dashed
+-double
+-groove
+-inset
+-outset
+Border-width
+.This property specifies the width of the border
+.border-width:5px;
+Border-color
+.it specifies the color of the border
+.border-color:color;
+Border-radius
+.Border -radius makes corner curved
+.border-radius:4px;
+Individual side
+.border-left-style:dashed;
+.border-left-color:green;
+Individual side
+.Border-style:dashed solid dotted double;
+                            top       right bottom left
+.border-style:dashed solid dotted;
+                            top  right  left  bottom
+.border-style:dashed double;
+                           top bottom  right left
+.boder-style:dashed;
+                       all side
+Border is a short hand property
+.border:5px solid blue;
+                width style color
+================================================================
+Background color
+.Every html element that consumes space in the web page is a rectangle region
+.This rectangular region can be filled with specific color.
+.background-color:#419DEF;
+===============================================================
+Backgroundcolor-image
+.Every html element consumes space in the web page is a rectangle region
+.This rectangle region can be filled with specific image
+.background-image:url('image-file.jpg');
+===================================================================
+Every html element that consumes space in the web page is a rectangular region
+.We can set width and height of this rectangular region
+.width:100px;
+.height:50px;
+====================================================================
+Box Model
+.Every html element that consumes space in the web page is a rectangle region.
+Margin and padding
+.margin:10px;
+.padding:5px;
+====================================================================
+Link states
+.a:link-a normal ,unvisited link
+.a :visited- alink the user has visited
+.a:hover- a link when the user mouse over it
+.a:active-a link the moment it is clicked
+Explore with example
+.How to change colour of the different states oa link ?
+.How to remove default underline form the link?
+=================================================================
+Why positioning is important?
+.By default,Html element appear on the web  page in the same sequence as they are in the html code
+.html is not capable to set position of html element with precision.
+=================================================================
+Position property
+.The position property specifies the type of positioning methods used for an element
+.position:static;   /*  default  */
+.position :fixed;
+.position :relative;
+.position: absolute;
+Positioning
+.Elements are then positioned using the top,bottom,left and right properties.
+.These properties will not work unless the position property is set first(value should not be static).
+.They also work differently depending on the position value.
+STATIC
+.Html elements are positioned static by default
+.Top ,left,bottom,right properties will not work
+.Elements appear according to the normal flow.
+FIXED
+.Elements with position fixed always stays in the same place even if the page is scrolled.
+.Top ,left,right,bottom will work
+RELATIVE
+.An element with position:relative;is positioned relative to its normal position.
+.Top ,left,right,bottom will work
+ABSOLUTE
+.A positioned element  is one whose position is anything except static
+.An absolute positioned element is positioned relative to the nearest positioned ancestors
+.if an absolute positioned elements has no positioned ancestors,iot uses the document body,and moves along with pages scrolling.
+===========================================================================
+Z-index
+.When elements are positioned,they can overlap other elements
+.The z-index property specifies that stack order of an  element
+.An element with greater stack order is always in front of an elements with a lower stack order
+.if two positioned element overlap without a z-index specified, the element positioned last the html code will be shown on top
+==========================================================================================
+
+
